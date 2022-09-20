@@ -1,3 +1,5 @@
+local player = game.Player.LocalPlayer
+
 local InfiniteJumpEnabled = false
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
@@ -20,7 +22,7 @@ game.StarterGui:SetCore("SendNotification", {
 wait(1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "Have Fun deleting ppls dad";
-    Text = "enjoy";
+    Text = "enjoy "..player.Name..;
     Duration = 60;
 })
 wait(1)
