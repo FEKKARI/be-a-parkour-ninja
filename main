@@ -1,3 +1,5 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
 local InfiniteJumpEnabled = false
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
