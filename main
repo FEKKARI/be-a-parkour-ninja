@@ -35,6 +35,14 @@ game.StarterGui:SetCore("SendNotification", {
     Text = "its kickable it will be updated soon";
     Duration = 60;
 })
+wait(1)
+OrionLib:MakeNotification({
+	Name = "use kunai (ARROWS)",
+	Content = "its better to not get kicked for lagging",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 _G.HeadSize = 20
 _G.Disabled = true
 
