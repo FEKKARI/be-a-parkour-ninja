@@ -1,11 +1,10 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local InfiniteJumpEnabled = false
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
 end)
-
+ 
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -14,39 +13,19 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
  
 game.StarterGui:SetCore("SendNotification", {
-    Title = "join discord ";
-    Text = "Made by NotYix.#5652";
-    Duration = 10;
+    Title = "Subscribe To JN HH Gaming";
+    Text = "Made by JN HH Gaming"; -- what the text says (ofc)
+    Duration = 60;
 })
 wait(1)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Have Fun deleting ppls dad";
-    Text = "enjoy";
+    Title = "Have Fun Killing";
+    Text = "Enjoy"; -- what the text says (ofc)
     Duration = 10;
 })
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "join the discord for more scripts";
-    Text = "https://discord.gg/sKV8vF4DAT";
-    Duration = 10;
-})
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "infinite jump is off";
-    Text = "its kickable it will be updated soon";
-    Duration = 10;
-})
-wait(5)
-OrionLib:MakeNotification({
-	Name = "use kunai (ARROWS)",
-	Content = "its better to not get kicked for lagging",
-	Image = "rbxassetid://4483345998",
-	Time = 10
-})
-
-_G.HeadSize = 16
+_G.HeadSize = 20
 _G.Disabled = true
-
+ 
 game:GetService('RunService').RenderStepped:connect(function()
 if _G.Disabled then
 for i,v in next, game:GetService('Players'):GetPlayers() do
@@ -54,7 +33,7 @@ if v.Name ~= game:GetService('Players').LocalPlayer.Name then
 pcall(function()
 v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
 v.Character.HumanoidRootPart.Transparency = 0.7
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Blue")
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
 end)
